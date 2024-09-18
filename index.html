@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons Side by Side</title>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="button login">Войти</button>
+      <button class="button register">Зарегистрироваться</button>
+    </div>
+
+    <ul class="menu">
+      <li class="menu-item">Фильтры результата</li>
+      <li class="menu-item">Бланк</li>
+      <li class="menu-item">Образование</li>
+      <li class="menu-item">Тарифные планы и цены</li>
+    </ul>
+
+    <div class="container">
+      <div class="column">
+        <h2>Дизайны</h2>
+        <ul>
+          <li>Логотипы</li>
+          <li>Плакаты</li>
+          <li>Визитки</li>
+          <li>Флаеры</li>
+          <li>Резюме</li>
+          <li>Презентации</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>Обзор</h2>
+        <ul>
+          <li>Типы дизайна</li>
+          <li>Шаблоны</li>
+          <li>Диаграммы и графики</li>
+          <li>Редактирование фото</li>
+          <li>Печать</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="icon-container">
+      <img src="Screenshot 2024-09-18 163909.png" alt="Facebook" class="icon" />
+      <img src="Screenshot 2024-09-18 164032.png" alt="Twitter" class="icon" />
+      <img
+        src="Screenshot 2024-09-18 164005.png"
+        alt="Pinterest"
+        class="icon"
+      />
+      <img src="image.png" alt="Instagram" class="icon" />
+    </div>
+    <style>
+      .container {
+    display: flex;
+    gap: 20px; /* Ustunlar orasidagi masofa */
+  }
+  .column {
+    flex: 1;
+  }
+  .column h2 {
+    text-align: center;
+  }
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .column li {
+    padding: 5px 0;
+  }
+  .menu {
+    display: flex;
+    gap: 20px; /* Elementlar orasidagi masofa */
+    list-style-type: none;
+    padding: 0;
+  }
+  .menu-item {
+    padding: 10px 20px;
+    background-color: lightgrey;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  .button-container {
+    display: flex;
+    gap: 10px; /* Tugmalar orasidagi masofa */
+  }
+  .button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .login {
+    background-color: lightblue;
+    color: darkgrey;
+    border-radius: 10px;
+  }
+  .register {
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+  }
+    </style>
+  </body>
+</html>
